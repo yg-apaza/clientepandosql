@@ -27,7 +27,7 @@ public class Cliente
         }
     }
     
-    public void ejecutar(String lineas) throws IOException
+    public void ejecutar(String lineas)
     {
         try
         {
@@ -35,12 +35,13 @@ public class Cliente
             out.flush();
             String respuesta = in.readUTF();
             if(!respuesta.isEmpty())
-                System.out.println(respuesta);            
+                System.out.println(respuesta);  
+            socket.close();
         }
-        catch (IOException ex)
+        catch (IOException | NullPointerException ex)
         {
-            System.out.println("Error.");
+            System.out.println("Imposible ejecutar orden.");
         }
-        socket.close();
+        
     }
 }
