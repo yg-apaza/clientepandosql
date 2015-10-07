@@ -43,6 +43,6 @@ public class Cliente
             System.out.println("Error.");
             ex.printStackTrace();
         }
-        //socket.close();
+        socket.close();
     }
 }
