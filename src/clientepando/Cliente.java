@@ -42,6 +42,5 @@ public class Cliente
         {
             System.out.println("Imposible ejecutar orden.");
         }
-        
     }
 }
