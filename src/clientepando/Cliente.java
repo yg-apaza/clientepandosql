@@ -24,7 +24,6 @@ public class Cliente
         catch (IOException ex)
         {
             System.out.println("Servidor PandoSQL no disponible.");
-            ex.printStackTrace();
         }
     }
     
@@ -41,7 +40,6 @@ public class Cliente
         catch (IOException ex)
         {
             System.out.println("Error.");
-            ex.printStackTrace();
         }
         socket.close();
     }
