@@ -27,7 +27,7 @@ public class Cliente
         }
     }
     
-    public void ejecutar(String lineas)
+    public void enviar(String lineas)
     {
         try
         {
@@ -36,7 +36,6 @@ public class Cliente
             String respuesta = in.readUTF();
             if(!respuesta.isEmpty())
                 System.out.println(respuesta);  
-            socket.close();
         }
         catch (IOException | NullPointerException ex)
         {
