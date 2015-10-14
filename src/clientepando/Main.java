@@ -20,7 +20,10 @@ public class Main
         {
             System.out.print("pandosql> ");
             linea = scan.nextLine();
+            if(linea.equals("exit"))
+                break;
             c.enviar(linea);
         }
+        c.desconectar();
     }
 }

@@ -42,4 +42,16 @@ public class Cliente
             System.out.println("Servidor PandoSQL no disponible. Imposible ejecutar orden.");
         }
     }
+    
+    public void desconectar()
+    {
+        try
+        {
+            socket.close();
+        }
+        catch (IOException ex)
+        {
+            System.out.println("Conexión errónea con el servidor PandoSQL");
+        }
+    }
 }
