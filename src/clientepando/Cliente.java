@@ -39,7 +39,7 @@ public class Cliente
         }
         catch (IOException | NullPointerException ex)
         {
-            System.out.println("Imposible ejecutar orden.");
+            System.out.println("Servidor PandoSQL no disponible. Imposible ejecutar orden.");
         }
     }
 }
